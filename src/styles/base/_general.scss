@@ -1,12 +1,11 @@
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Montserrat', sans-serif;
+h1, h2, h3, h4, h5, h6, p, a {
     color: white;
 }
 
 .container {
     margin: auto;
     padding: 0 15px;
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 html, body {
@@ -15,15 +14,32 @@ html, body {
 }
 
 h1, h2 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 64px;
     font-weight: 400;
+    margin: 0;
 }
 h3 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 48px;
     font-weight: 300;
 }
 
 p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 300;
+    margin: 0;
+}
+
+a { 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+b, strong {
+    font-weight: 900;
 }

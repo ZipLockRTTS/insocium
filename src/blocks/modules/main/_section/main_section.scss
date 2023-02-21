@@ -1,0 +1,83 @@
+.main {
+    padding: 181px 0px 218px 0px;
+    display: flex;
+}
+
+.main-column__first {
+    width: 50%;
+    position: relative;
+}
+
+.main-column__second {
+    width: 50%;
+}
+
+.main_for-photo{
+    position: relative;
+    z-index: 5;
+}
+
+.iphone_slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.main-cards, .main-cards__inner {
+    display: flex;
+}
+
+.icon-apple, .icon-android {
+    display: block;
+    width: 34px;
+    height: 41px;
+}
+
+.main-cards__text {
+    padding-left: 23px;
+}
+
+.main-cards__text p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.main-cards {
+    gap: 28px;
+}
+
+.main-cards__inner {
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    width: 210px;
+    height: 64px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.main-column__first::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #4264FB;
+    filter: blur(173px); 
+    top: 0;
+    left: -100px;
+}
+
+.main-column__first-inner {
+    z-index: 1;
+    position: relative;
+}
+
+.main-font {
+    padding-bottom: 40px;
+}
+
+.main-discription {
+    padding-bottom: 40px;
+}
