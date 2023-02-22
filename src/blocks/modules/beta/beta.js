@@ -7,7 +7,7 @@ const reviewsSlider = new Swiper('.beta_slider', {
       
         // If we need pagination
         pagination: {
-          el: '.beta_slider .swiper-pagination',
+          el: '.beta_swiper-pagination',
           clickable: true
         },
     
