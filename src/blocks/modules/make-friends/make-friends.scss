@@ -1,0 +1,24 @@
+.make-friends {
+    display: flex;
+    justify-content: space-around;
+}
+
+.make-friends_column h2 {
+    font-size: 48px;
+    line-height: 58.51px;
+}
+
+.make-friends_column p {
+    padding-top: 30px;
+}
+
+.make-friends_column button {
+    margin-top: 40px;
+}
+
+.make-friends_column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
