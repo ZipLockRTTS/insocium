@@ -1,5 +1,5 @@
 .twophones_section {
-    padding: 184px 70px;
+    padding: 200px 70px;
 }
 
 .twophones, .twophones_column-first {
@@ -8,7 +8,66 @@
     justify-content: space-between;
 }
 
+.twophones_column-three {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    height: 643px;
+    width: 315px;
+}
+
+.twophones_column-three img {
+    position: absolute;
+    top: 67px;
+    left: -237px;
+    z-index: 1;
+}
+
 .twophones_column-first h2 {
     font-weight: 300;
     line-height: 78.02px;
+}
+
+.twophones_column-second {
+    padding-bottom: 130px;
+    position: relative;
+}
+
+.twophones_column-second {
+    z-index: 2;
+}
+
+.twophones_column-second img {
+    position: relative;
+    z-index: 2;
+}
+
+.twophones {
+    position: relative;
+}
+
+.twophones::before {
+    position: absolute;
+    content: "";
+    top: 214px;
+    left: 539px;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background: #4264FB;
+    filter: blur(162px);
+    z-index: 0;
+}
+
+.twophones::after {
+    position: absolute;
+    content: '';
+    top: 240px;
+    left: 266px;
+    width: 1009.11px;
+    height: 358.38px;
+    opacity: 0.4;
+    border-radius: 100%;
+    border: 1px solid #FFFFFF;
+    transform: rotate(-35deg);
 }
