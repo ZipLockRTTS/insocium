@@ -1,0 +1,60 @@
+.why-us_section {
+    padding: 120px 0px;
+}
+
+.why-us h2{
+    font-weight: 300;
+    line-height: 89.86px;
+    padding: 0 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.icon-text_list li {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24.38px;
+    padding-bottom: 20px;
+}
+
+.icon-text_list {
+    list-style-image: url(../../../img/sprites/icon-text.svg);
+}
+
+.icon-text_section {
+    padding-top: 40px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.icon-text_column, .icon-text_column1 {
+    padding-left: 70px;
+}
+
+.image-phn {
+    position: relative;
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.image-phn_column img, .image-phn_column1 img {
+    transform: rotate(-30deg);
+}
+
+.image-phn_column {
+    position: relative;
+    z-index: 1;
+}
+
+.image-phn:before {
+    position: absolute;
+    content: '';
+    top: 89px;
+    left: 208px;
+    width: 848px;
+    height: 544px;
+    background: #4264FB;
+    filter: blur(350px);
+}
