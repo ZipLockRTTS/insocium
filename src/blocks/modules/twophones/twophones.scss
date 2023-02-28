@@ -1,7 +1,14 @@
 .twophones_section {
-    padding: 184px 0px;
+    padding: 184px 70px;
 }
 
-.twophones {
+.twophones, .twophones_column-first {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.twophones_column-first h2 {
+    font-weight: 300;
+    line-height: 78.02px;
 }
