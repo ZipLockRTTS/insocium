@@ -1,0 +1,13 @@
+.appletext_string {
+    font-size: 64px;
+    line-height: 89.86px;
+    opacity: .25;
+    transition-property: opacity;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0.25,1,0.5,1);
+    padding: 0px 70px;
+}
+
+.active {
+    opacity: 1;
+}
