@@ -4,3 +4,6 @@ import "%modules%/main/_section/main_section";
 import "%modules%/beta/beta";
 import "%modules%/appletext/appletext";
 import "%modules%/phones-slider/phones-slider";
+import "%modules%/twophones/twophones";
+import "%modules%/imagane/imagane";
+import "%modules%/video/video";
