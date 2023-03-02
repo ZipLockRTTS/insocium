@@ -1,7 +1,8 @@
 .beta_section {
     background-color: #151618;
-    z-index: 2;
+    z-index: 7;
     position: relative;
+    margin-top: -550px;
 }
 
 .beta_swiper-pagination {
@@ -78,4 +79,10 @@ span.swiper-pagination-bullet, span.swiper-pagination-bullet-active {
     background: #FFFFFF;
     border-radius: 44px;
     border: none;
+}
+
+@media screen and (max-width: 1430px) {
+    .beta_section { 
+        margin-top: -545px;
+    }
 }
