@@ -218,6 +218,11 @@
         height: 585px;
         padding: 0 15px;
     }
+
+    .main-column__first::before {
+        top: 101px;
+        left: -62px;
+    }
 }
 
 @keyframes run {

@@ -91,6 +91,35 @@ span.swiper-pagination-bullet, span.swiper-pagination-bullet-active {
     .beta_section { 
         margin-top: -515px;
     }
+    
+    .beta-font {
+        font-size: 48px;
+        line-height: 64.27px;
+        padding: 10px 25px 15px 25px;
+    }
+
+    .beta-discription {
+        line-height: 24.38px;
+        padding-top: 40px;
+    }
+
+    .beta {
+        padding-top: 57px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .beta-column__first {
+        width: 50%;
+    }
+
+    .beta-column__first img {
+        width: 100%;
+    }
+
+    .beta_swiper-pagination {
+        padding: 30px 0px 140px 0px;
+    }
 }
 
 @media screen and (max-width: 768px){
