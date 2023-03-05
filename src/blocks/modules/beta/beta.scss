@@ -86,3 +86,15 @@ span.swiper-pagination-bullet, span.swiper-pagination-bullet-active {
         margin-top: -545px;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .beta_section { 
+        margin-top: -515px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .beta_section { 
+        margin-top: 0px;
+    }
+}
