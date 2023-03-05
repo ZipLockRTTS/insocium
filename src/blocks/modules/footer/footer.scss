@@ -1,0 +1,37 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding-bottom: 95px;
+}
+
+.footer_column-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_column-second {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_column-second a, .footer_column-third a {
+    font-size: 20px;
+    line-height: 24.38px;
+    font-weight: 300;
+}
+ 
+.footer_column-third {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.made-by {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
