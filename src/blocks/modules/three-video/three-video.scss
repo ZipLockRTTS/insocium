@@ -14,3 +14,9 @@
     padding: 0 70px;
     justify-content: space-between;
 }
+
+@media screen and(max-width: 1024px) {
+    .three-video_content {
+        padding: 0;
+    }
+}

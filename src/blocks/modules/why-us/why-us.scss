@@ -58,3 +58,33 @@
     background: #4264FB;
     filter: blur(350px);
 }
+
+@media screen and (max-width: 1024px) {
+    .why-us h2 {
+        padding: 0 20px;
+    }
+
+    .icon-text_column, .icon-text_column1 {
+        padding: 0 20px;
+    }
+    .icon-text_list {
+        padding: 0 25px;
+    }
+    .icon-text_list li {
+        padding-left: 5px;
+        padding-bottom: 25px;
+    }
+    
+    .why-us.container_imagane {
+        padding-bottom: 40px;
+    }
+
+    .image-phn.container_imagane {
+        padding-top: 80px;
+    }
+
+    .image-phn:before {
+        width: 515px;
+        height: 454px;
+    }
+}
