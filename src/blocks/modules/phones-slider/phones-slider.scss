@@ -69,9 +69,9 @@
 }
 
 @media screen and (max-width: 786px) {
-    .swiper-slide img{
-        width: 300px !important;;
-        height: auto !important;;
+    .phone_slider .swiper-slide img {
+        width: 300px !important;
+        height: auto;
     }
 
     .phone-title h2 {
@@ -86,5 +86,47 @@
 
     .phone_slider {
         padding: 144px 0px 200px 0px !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .phone-title h2 {
+        font-size: 32px;
+        line-height: 39.01px;
+        text-align: center;
+    }
+
+    .phone-title h3 {
+        font-size: 20px;
+        line-height: 29.38px;
+    }
+
+    .phone_slider .swiper-slide img {
+        width: 155px !important;
+    }
+
+    .phone-list_section {
+        background-position: 50% -95px;
+        background-size: 722px;
+    }
+
+    .phone_slider .swiper-slide {
+        padding: 0px 10px;
+    }
+
+    .phone_slider {
+        padding: 35px 0px 80px 0px !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .phone-title h3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .phone-title h3 {
+        font-size: 15px;
     }
 }

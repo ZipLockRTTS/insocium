@@ -36,3 +36,11 @@
       line-height: 67.39px;
     }
   }
+
+  @media screen and (max-width: 425px) {
+    .appletext_string {
+      padding: 7px 0;
+      font-size: 32px;
+      line-height: 39.01px;
+    }
+  }

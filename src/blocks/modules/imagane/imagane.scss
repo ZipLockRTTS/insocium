@@ -254,3 +254,28 @@ svg.buble-first {
         gap: 20px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .imagane_section {
+        padding: 0;
+    }
+
+    .imagane.container_imagane {
+        padding: 80px 0;
+    }
+
+    .imagane-title h2 {
+        font-size: 32px;
+    }
+
+    .first_bubble-container {
+        padding-bottom: 50px;
+    }
+
+    .four-card-section {
+        padding-top: 65px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

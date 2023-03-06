@@ -131,3 +131,45 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .why-us_section {
+        padding: 80px 0;
+    }
+
+    .why-us h2 {
+        font-size: 32px;
+        line-height: 44.93px;
+    }
+
+    .why-us.container_imagane {
+        padding-bottom: 25px;
+    }
+
+    .icon-text_section {
+        flex-direction: column;
+    }
+
+    .icon-text_list li {
+        font-size: 16px;
+        line-height: 22.4px;
+        padding-bottom: 20px;
+    }
+
+    .image-phn_column img, .image-phn_column1 img {
+        width: 127.54px;
+        height: 259.2px;
+    }
+
+    .image-phn.container_imagane {
+        padding-top: 30px;
+    }
+
+    .image-phn:before {
+        filter: blur(50px);
+        width: 285px;
+        height: 285px;
+        top: -7px;
+        left: 56px;
+    }
+}

@@ -31,3 +31,25 @@
         overflow-x: scroll;
     }
 }
+
+@media screen and  (max-width: 425px) {
+    .three-video_title h2 {
+        padding: 0px 0px 40px 0px;
+        font-size: 32px;
+        line-height: 44.93px;
+    }
+
+    .three-video_content {
+        overflow-x: unset;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .three-video_first img, .three-video_second img, .three-video_third img {
+        width: 100%;
+    }
+
+    .three-video_section {
+        padding-bottom: 80px;
+    }
+}
