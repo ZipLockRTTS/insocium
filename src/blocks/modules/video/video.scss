@@ -11,3 +11,13 @@
     font-size: 48px;
     line-height: 140.4%;
 }
+
+@media screen and (max-width: 1024px){
+    .video.container {
+        padding: 0 20px;
+    }
+
+    .video iframe {
+        height: 642.44px;
+    }
+}

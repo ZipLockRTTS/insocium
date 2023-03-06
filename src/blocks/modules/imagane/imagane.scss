@@ -110,3 +110,47 @@ svg.buble-first {
     line-height: 24px;
     padding-left: 20px;
 }
+
+@media screen and (max-width:1024px) {
+    .imagane_section {
+        padding-top: 140px;
+    }
+    
+    .imagane-title h2 {
+        padding: 0;
+    }
+
+    .container_imagane {
+        padding: 0 20px;
+    }
+
+    .four-card-section {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .icon-text br {
+        display: none;
+    }
+
+    .icon-apple.imAG, .icon-android.imAG {
+        width: 35px;
+        height: 35px;
+    }
+
+    .icon-text {
+        align-items: center;
+    }
+
+    .four-card-section {
+        padding-top: 134px;
+    }
+
+    .icon-number {
+        padding-top: 0;
+    }
+
+    .info-card h3 {
+        padding-top: 10px;
+    }
+}

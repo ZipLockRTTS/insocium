@@ -14,6 +14,7 @@
     position: relative;
     height: 643px;
     width: 315px;
+    z-index: 1;
 }
 
 .twophones_column-three img {
@@ -70,4 +71,33 @@
     border-radius: 100%;
     border: 1px solid #FFFFFF;
     transform: rotate(-35deg);
+}
+
+@media screen and (max-width:1024px) {
+    .twophones_section {
+        padding: 200px 20px;
+    }
+
+    .twophones_column-second img {
+        width: 272px;
+        height: 553px;
+        left: 95px;
+    }
+
+    .twophones_column-three img {
+        width: 272px;
+        height: 553px;
+        bottom: 0;
+        left: 0;
+        top: 90px;
+    }
+
+    .twophones_column-second {
+        padding-bottom: 140px;
+    }
+
+    .twophones::after {
+        top: 153px;
+        left: 186px;
+    }
 }

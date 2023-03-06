@@ -15,11 +15,17 @@
   
   .element-animation.element-show {
     opacity: 1;
-    font-weight: 700;
+    font-weight: 400;
     transition: all 1.5s;
     transform: translateY(0%);
   }
 
   .second {
     transition-delay: 1s;
+  }
+
+  @media screen and (max-width: 1024px){
+    .appletext_string {
+      padding: 0 20px;
+    }
   }
