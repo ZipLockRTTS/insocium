@@ -24,3 +24,10 @@
         padding: 40px 0px 40px 0px;
     }
 }
+
+@media screen and  (max-width: 768px) {
+    .three-video_content {
+        gap: 33px;
+        overflow-x: scroll;
+    }
+}

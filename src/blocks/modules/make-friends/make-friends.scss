@@ -28,3 +28,16 @@
         justify-content: space-between;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .make-friends_column2 img {
+        width: 222px;
+        height: 451.17px;
+    }
+
+    .make-friends_column p {
+        font-size: 16px;
+        line-height: 19.5px;
+        padding-top: 23px;
+    }
+}

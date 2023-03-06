@@ -67,3 +67,24 @@
         transform: scale(1.14);
     }
 }
+
+@media screen and (max-width: 786px) {
+    .swiper-slide img{
+        width: 300px !important;;
+        height: auto !important;;
+    }
+
+    .phone-title h2 {
+        font-size: 48px;
+        line-height: 58.51px;
+    }
+
+    .phone-title h3 {
+        font-size: 32px;
+        line-height: 47.01px;
+    }
+
+    .phone_slider {
+        padding: 144px 0px 200px 0px !important;
+    }
+}
