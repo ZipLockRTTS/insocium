@@ -8,3 +8,10 @@
 .roadmap_section {
     padding-bottom: 238px;
 }
+
+@media screen and (max-width: 1024px) {
+    .roadmap_title h2 {
+        padding: 0 20px;
+        font-size: 48px;
+    }
+}

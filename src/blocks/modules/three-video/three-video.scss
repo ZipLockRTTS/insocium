@@ -15,8 +15,12 @@
     justify-content: space-between;
 }
 
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .three-video_content {
         padding: 0;
+    }
+
+    .three-video_title h2 {
+        padding: 40px 0px 40px 0px;
     }
 }

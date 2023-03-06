@@ -35,3 +35,14 @@
     justify-content: space-between;
     padding-top: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+    .footer_section {
+        padding: 0 20px;
+        padding-bottom: 100px;
+    }
+
+    .footer {
+        gap: 40px;
+    }
+}

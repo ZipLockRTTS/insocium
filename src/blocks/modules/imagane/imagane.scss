@@ -111,6 +111,10 @@ svg.buble-first {
     padding-left: 20px;
 }
 
+.buble-first.adaptbuble {
+    display: none;
+}
+
 @media screen and (max-width:1024px) {
     .imagane_section {
         padding-top: 140px;
@@ -149,5 +153,104 @@ svg.buble-first {
 
     .info-card h3 {
         padding-top: 10px;
+    }
+
+    .info-card {
+        background: rgb(226 226 226 / 16%);
+    }
+
+    .imagane-map_container {
+        background-size: 956px 965px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .imagane_section {
+        padding-top: 90px;
+    }
+    
+    .imagane-title h2 {
+        font-size: 36px;
+        line-height: 50.54px;
+    }
+
+    .buble-first {
+        display: none;
+    }
+
+    .buble-first.adaptbuble {
+        display: block;
+    }
+
+    svg.buble-first.adaptbuble {
+        height: 358px;
+        width: 439px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .first-bubble {
+        font-size: 32px;
+        line-height: 42.85px;
+    }
+
+    .second-bubble.bbbl {
+        position: relative;
+    }
+
+    .first-bubble.bbbbl {
+        position: relative;
+        padding-left: 50px;
+    }
+
+    .imagane-map_container {
+        background-image: url("/img/sprites/768-adapt.svg");
+    }
+
+    .second-bubble.bbbl::before {
+        background-image: url("/img/sprites/bbl-left.svg");
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        content: '';
+        height: 358px;
+        width: 439px;
+        bottom: -135px;
+        left: -85px;
+        z-index: -1;
+    }
+
+    .first-bubble.bbbbl::before {
+        background-image: url("/img/sprites/bbl-right.svg");
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        content: '';
+        height: 358px;
+        width: 439px;
+        bottom: -135px;
+        left: -85px;
+        z-index: -1;
+    }
+
+    .four-card-section {
+        padding-top: 150px;
+    }
+
+    .imagane.container_imagane {
+        padding: 100px 0;
+    }
+    
+    .imagane-title, .imagane-map_container {
+        padding: 30px 20px;
+    }
+
+    .four-card-section {
+        gap: 20px;
     }
 }
