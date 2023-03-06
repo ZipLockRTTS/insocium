@@ -5,4 +5,5 @@ const reviewsSlider = new Swiper('.phone_slider', {
     loop: true,
     slidesPerView: "auto",
     centeredSlides: true,
+    
 });

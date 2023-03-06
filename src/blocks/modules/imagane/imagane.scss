@@ -127,6 +127,7 @@ svg.buble-first {
     .four-card-section {
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        padding-top: 192px;
     }
 
     .icon-text br {
@@ -140,10 +141,6 @@ svg.buble-first {
 
     .icon-text {
         align-items: center;
-    }
-
-    .four-card-section {
-        padding-top: 134px;
     }
 
     .icon-number {

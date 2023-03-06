@@ -22,3 +22,9 @@
     align-items: flex-start;
     justify-content: center;
 }
+
+@media screen and (max-width: 1024px) {
+    .make-friends {
+        justify-content: space-between;
+    }
+}
