@@ -5,9 +5,7 @@
 }
 
 .element-animation {   
-    /* Скроем элемент в начальном состоянии */
     opacity: .25;
-    transform: translateY(20px);
     transition-property: opacity;
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(0.25,1,0.5,1);
@@ -15,13 +13,12 @@
   
   .element-animation.element-show {
     opacity: 1;
-    font-weight: 400;
-    transition: all 1.5s;
-    transform: translateY(0%);
+    font-weight: 300;
+    transition: all .8s;
   }
 
   .second {
-    transition-delay: 1s;
+    transition-delay: 0s;
   }
 
   @media screen and (max-width: 1024px){
