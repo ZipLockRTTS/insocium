@@ -1,3 +1,22 @@
+:root {
+    /* === .rotate-date box === */
+    --date-letter-spacing: -0.08em;
+    --date-text-size: 24px;
+    --date-text-line: 29px;
+    --date-small-size: 10px;
+    --date-small-line: 12px;
+    /* === end .rotate-date box === */
+
+    /* === .rotate-circle === */
+    --circle-img: url('../img/sprites/circle-sm.svg');
+    --circle-img-active: url('../img/sprites/circle.svg');
+    --circle-width: 97px;
+    --circle-height: 97px;
+    /* === end .rotate-circle === */
+}
+
+.rotate-slider-item {}
+
 .roadmap_title h2 {
     padding: 0 70px;
     font-weight: 300;
@@ -6,8 +25,232 @@
 }
 
 .roadmap_section {
-    padding-bottom: 238px;
+    position: relative;
+    overflow: hidden;
+    min-height: 1000px;
 }
+
+
+.rotate-slider {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+
+    &-wrapper {
+        width: 100%;
+        padding-top: 100%;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    &-initialized &-wrapper,
+    &-initialized &-item {
+        transition: transform .25s;
+    }
+
+    &-item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+    }
+}
+
+#rotateSlide {
+    max-width: 1250px;
+    max-height: 1250px;
+    transform: translateX(-35%);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -175px;
+    left: 0;
+    width: 100%;
+
+    @media (max-width: 574px) {
+        position: relative;
+        top: auto;
+        left: auto;
+        border-radius: 0;
+        transform: translateX(0);
+        max-width: 100%;
+        max-height: none;
+    }
+}
+
+.rotate-custom {
+    width: inherit;
+
+    &-card {
+        width: 862px;
+        padding: 70px 60px;
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        border: 1px solid #273776;
+        transform: scale(.75);
+        opacity: .3;
+        transition: transform .25s, opacity .25s;
+    }
+    .rotate-slider-item-active &-card {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    @media (max-width: 574px) {
+        &-card {
+            width: 100%;
+            transform: scale(1);
+            opacity: 1;
+            padding: 21px 17px;
+        }
+        & {
+            padding-top: 0;
+        }
+        .rotate-slider-item {
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility .25s, opacity .25s;
+            width: 100%;
+        }
+        .rotate-slider-item-active {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+#rotateDate {
+    max-width: 500px;
+    max-height: 500px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+
+    @media (max-width: 574px) {
+        transform: translateX(-50%) translateY(50%) rotate(-90deg);
+        left: 50%;
+        top: auto;
+        bottom: 0;
+        max-width: 208px;
+        max-height: 208px;
+    }
+}
+
+.rotate-date {
+    width: inherit;
+
+    &-text {
+        font-size: var(--date-text-size);
+        line-height: var(--date-text-line);
+        letter-spacing: var(--date-letter-spacing);
+        font-weight: 300;
+        color: #fff;
+
+        opacity: .3;
+        transform: scale(.5);
+        transition: transform .25s, opacity .25s;
+    }
+
+    .rotate-slider-item-active &-text {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    &-small {
+        display: block;
+        font-size: var(--date-small-size);
+        line-height: var(--date-small-line);
+        letter-spacing: 0;
+    }
+
+    
+}
+
+#rotateCircle {
+    max-width: 625px;
+    max-height: 625px;
+    transform: translateX(-50%);
+    border: 1px solid rgba(#4863DE, .2);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 100%;
+
+    @media (max-width: 574px) {
+        transform: translateX(-50%) translateY(50%) rotate(-90deg);
+        left: 50%;
+        top: auto;
+        bottom: 0;
+        max-width: 308px;
+        max-height: 308px;
+    }
+}
+
+.rotate-circle {
+    width: inherit;
+
+    &-icon {
+        background: var(--circle-img) no-repeat;
+        background-position: center;
+        background-size: contain;
+    
+        width: var(--circle-width);
+        height: var(--circle-height);
+        display: block;
+        transform: scale(.25);
+        transition: transform .25s;
+    }
+
+    .rotate-slider-item-active &-icon {
+        transform: scale(1);
+        background: var(--circle-img-active) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+h3.rotate-custom-title {
+    padding: 0;
+    margin: 0;
+}
+
+.rotate-custom-card {
+    position: relative;
+}
+
+.rotate-custom-card::before {
+    position: absolute;
+    content: '';
+    background: #4264FB;
+    opacity: 0.3;
+    filter: blur(71px);
+    width: 980px;
+    height: 244px;
+    top: 0;
+    left: 0;
+}
+
+.roadmap_title.container_imagane {
+    max-width: 100%;
+    position: relative;
+    background-color: #151618;
+    z-index: 99999;
+    padding-bottom: 50px;
+}
+
+.roadmap_title.container_imagane h2 {
+   padding-left: 150px;
+}
+
 
 @media screen and (max-width: 1024px) {
     .roadmap_title h2 {
@@ -23,5 +266,36 @@
 
     .footer {
         gap: 0;
+    }
+
+    .roadmap_title.container_imagane {
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .roadmap_section {
+        min-height: 557px;
+        padding: 50px 20px;
+    }
+    .rotate-custom-card {
+        width: auto;
+    }
+
+    h3.rotate-custom-title {
+        font-size: 25px;
+    }
+
+    p.rotate-custom-text {
+        font-size: 16px;
+        line-height: 19.5px;
+    }
+
+    .roadmap_title.container_imagane {
+        padding: 0;
+    }
+
+    .roadmap_title.container_imagane h2 {
+        padding: 0;
     }
 }

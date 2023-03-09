@@ -7,3 +7,4 @@ import "%modules%/phones-slider/phones-slider";
 import "%modules%/twophones/twophones";
 import "%modules%/imagane/imagane";
 import "%modules%/video/video";
+import "%modules%/roadmap/roadmap";

@@ -2,7 +2,20 @@
     display: flex;
     justify-content: center;
     gap: 120px;
-    padding-bottom: 95px;
+    padding: 95px 0;
+}
+
+.roadmap_section::before {
+    position: absolute;
+    content: "";
+    background-image: url(/img/sprites/svg.svg);
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: 388px;
+    width: 758px;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .footer_column-first {
@@ -106,5 +119,34 @@
 
     .adaptive_column-frst a {
         width: 50%;
+    }
+
+    .roadmap_section::before {
+        position: absolute;
+        content: "";
+        background-image: url(/img/sprites/svg2.svg);
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-size: 388px;
+        width: 340px;
+        height: 65%;
+        top: 360px;
+        left: 19px;
+    }
+
+    .footer_section {
+        padding-top: 200px;
+    }
+}
+
+@media screen and (max-width: 375px) { 
+    .roadmap_section::before { 
+        left: -9px;
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    .roadmap_section::before { 
+        left: -30px;
     }
 }

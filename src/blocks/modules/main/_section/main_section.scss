@@ -3,7 +3,11 @@
     min-width: 224px;
     min-height: 1100px;
     overflow: hidden;
-    transform: translateY(-100px);
+    transform: translateY(-322px);
+}
+
+.main-column__second {
+    height: 1315px;
 }
 
 .running-line__wrapper {
@@ -135,6 +139,10 @@
 }
 
 @media screen and (max-width: 1024px) { 
+    .main-column__second {
+        height: auto;
+    }
+
     .main-second_section {
         position: relative;
     }
